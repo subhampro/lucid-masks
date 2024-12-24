@@ -58,3 +58,10 @@ RegisterNetEvent('lucid-masks:client:MaskOff', function(mask, tex)
 
     end)
 end)
+
+-- It will make this script supported in QBX Core && OX_INVENTORY
+
+exports('useMask', function(item)
+    if not item then return end
+    TriggerEvent('lucid-masks:client:ToggleMask')
+end)
