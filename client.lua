@@ -58,3 +58,8 @@ RegisterNetEvent('lucid-masks:client:MaskOff', function(mask, tex)
 
     end)
 end)
+
+exports('useMask', function(item)
+    if not item then return end
+    TriggerEvent('lucid-masks:client:ToggleMask')
+end)
